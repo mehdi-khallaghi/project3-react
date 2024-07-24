@@ -1,3 +1,4 @@
+import './Media.css'
 
 function Media(){
     return (

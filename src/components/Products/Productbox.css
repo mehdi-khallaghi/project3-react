@@ -1,0 +1,45 @@
+.productbox {
+    width: 300px;
+    height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    position: relative;
+}
+
+.productbox:hover{
+    box-shadow: 2px 2px 7px gray;
+}
+
+.productbox img {
+    width: 300px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.productbox h2 {
+    color: blue;
+    margin-left: 20px;
+}
+
+.productbox p {
+    margin-left: 20px;
+}
+
+.productbox a {
+    margin-left: 20px;
+    text-decoration: none;
+    height: 20px;
+    background-color: blue;
+    padding: 5px;
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.productbox a:hover {
+    background-color: white;
+    color:black;
+    border: 1px solid gray;
+}

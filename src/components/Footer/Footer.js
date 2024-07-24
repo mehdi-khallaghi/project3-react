@@ -1,4 +1,5 @@
 import Media from "./Media";
+import './Footer.css'
 
 function Footer (){
     return (
