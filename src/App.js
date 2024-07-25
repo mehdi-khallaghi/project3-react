@@ -1,16 +1,14 @@
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-import Products from './components/Products/Products';
+import React from 'react'
+import Header from './Header/Header';
+import Article from './Article/Article';
+import Footer from './Footer/Footer';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
-      <h1 className='mid-section'>hello word! :) </h1>
-      <Products />
+      <Article />
       <Footer />
     </div>
   );
 }
-
-export default App;
