@@ -1,10 +1,14 @@
 import React from 'react'
-
+import Product from './Product/Product';
+import './App.css'
+ 
 
 export default function App() {
   return (
-    <div>
-     
+    <div className='container'>
+     <Product/>
+     <Product/>
+     <Product/>
     </div>
   );
 }
