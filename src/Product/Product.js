@@ -1,19 +1,44 @@
 import React from 'react'
 import './Product.css'
 
-function Product() {
+function Product({title,image,price,count}) {
+  // console.log(props);
+
+  // let {title,image,price,count} = props
+
   return (
-    <div>
-      <h2>Product card</h2>
+    count &&
+    <div className='product'>
       <div className='card'>
-        <img src='sumsungA51.png' alt='Product'/>
-        <h1>Sumsung A51</h1>
-        <p className='price'>300$</p>
+        <img src={image} alt='Product' />
+        <h3>{title}</h3>
+        <p className='price'>{price} T</p>
         <p className='p-des'>The Samsung Galaxy A51 has a good screen and worse power</p>
         <button>Add To Card</button>
-        </div>
+      </div>
     </div>
   )
+
+
+
+
+  // if (props.count > 0) {
+  //   return (
+  //     <div className='product'>
+  //       <div className='card'>
+  //         <img src={props.image} alt='Product' />
+  //         <h3>{props.title}</h3>
+  //         <p className='price'>{props.price} T</p>
+  //         <p className='p-des'>The Samsung Galaxy A51 has a good screen and worse power</p>
+  //         <button>Add To Card</button>
+  //       </div>
+  //     </div> 
+  //   )
+  // } 
+
+  // return null;
+
+
 }
 
 export default Product;

@@ -1,4 +1,9 @@
 .container {
+    padding-top: 50px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 3000;
+    width: 80%;
+    margin: 0 auto 0;
 }
