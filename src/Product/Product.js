@@ -1,19 +1,25 @@
 import React from 'react'
 import './Product.css'
 
-function Product({title,image,price,count}) {
+function Product({ title: ProductTitle, image = 'sumsungA51.png', price = 'موجود نیست', count,children }) {
   // console.log(props);
 
   // let {title,image,price,count} = props
 
+  let title = 'Product card'
+
   return (
     count &&
     <div className='product'>
+
+      <h2>{title}</h2>
+
       <div className='card'>
         <img src={image} alt='Product' />
-        <h3>{title}</h3>
+        <h3>{ProductTitle}</h3>
         <p className='price'>{price} T</p>
         <p className='p-des'>The Samsung Galaxy A51 has a good screen and worse power</p>
+        {children}
         <button>Add To Card</button>
       </div>
     </div>
@@ -42,3 +48,12 @@ function Product({title,image,price,count}) {
 }
 
 export default Product;
+
+//---------------default value--روش اول-------------------------
+// Product.defaultProps = {
+//   image: 'sumsungA51.png',
+//   price:'موجود نیست',
+//   title :'موجود نیست',
+// }
+
+

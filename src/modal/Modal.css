@@ -1,0 +1,69 @@
+.cd-popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cd-popup-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+}
+
+.cd-popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/*-------------------------------modal---------------------------------------------*/
+
+
+
+
+.cd-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.cd-buttons {
+  list-style: none;
+}
+
+.gray-btn,
+.red-btn {
+width: 100px;
+  border: none;
+  padding: 10px 30px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.gray-btn {
+  background-color: #ccc;
+  color: #333;
+}
+
+.red-btn {
+  background-color: red;
+  color: #fff;
+}
