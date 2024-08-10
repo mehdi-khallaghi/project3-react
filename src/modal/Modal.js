@@ -1,6 +1,7 @@
 import React from 'react'
 import './Modal.css'
 
+
 export default function Modal({children}) {
     return (
         <div>
@@ -13,4 +14,4 @@ export default function Modal({children}) {
         </div>
     )
 }
-                            
+ 

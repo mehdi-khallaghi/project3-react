@@ -1,11 +1,13 @@
 import React from 'react'
 import Product from './Product/Product';
 import './App.css'
-import Modal from './modal/Modal';
+// import Modal from './modal/Modal';
 import Modal2 from './modal/Modal.ClassComponent';
+import User from './User/User';
 
 
 export default function App() {
+
 
   const allProducts = [
     { id: 1, title: 'V15 G4 لنوو - Athlon Silver 7120U 610M 8GB 256GB', count: 12 },
@@ -21,6 +23,13 @@ export default function App() {
 
   return (
     <div className='container'>
+
+     
+
+
+
+
+
       {/* <Modal>
         <p>پرداخت شما با موفقیت انجام شد!</p>
         <ul className="cd-buttons">
@@ -29,13 +38,13 @@ export default function App() {
         </ul>
       </Modal> */}
 
-      <Modal2 message='ثبت نام شما انجام نشد'>
+      {/* <Modal2 message='ثبت نام شما انجام نشد' state='false'>
         <ul className="cd-buttons">
           <li><a className='red-btn' href="#0">تایید</a></li>
           <li><a className='gray-btn' href="#0">بازگشت</a></li>
         </ul>
         <a href="#0" className="cd-popup-close img-replace">Close</a>
-      </Modal2>
+      </Modal2> */}
 
       <Product {...allProducts[0]}>
         <button>20% off</button>
